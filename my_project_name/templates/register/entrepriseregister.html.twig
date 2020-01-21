@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RegisterController!{% endblock %}
+
+{% block body %}
+{% if error %}
+<span class="error">{{ error }}<span>
+    {% endif %}
+        {{ form_start(post_form) }}
+        {{  form(post_form) }}
+        {{ form_end(post_form) }}
+        {% endblock %}
